@@ -34,7 +34,10 @@ var app = new Vue({
         if (this.imgIndex < 0 ) {
           this.imgIndex = this.img.length - 1;
         }
-      }
+      },
+      // bulletImg:function (i) {
+      //   this.imgIndex = i;
+      // }
     }
 
 

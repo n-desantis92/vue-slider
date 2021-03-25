@@ -37,6 +37,17 @@
   cursor: pointer;
 }
 
+.conteiner-slider i.fas.fa-chevron-left,
+.conteiner-slider i.fas.fa-chevron-right {
+  font-size: 30px;
+  color: #fff;
+}
+
+.conteiner-slider i.fas.fa-chevron-left:hover,
+.conteiner-slider i.fas.fa-chevron-right:hover {
+  color: #81C097;
+}
+
 .conteiner-bullets {
   background-color: #654321;
   min-width: 100px;
@@ -52,5 +63,5 @@
 }
 
 .conteiner-bullets i.active {
-  color: blue;
+  color: #81C097	;
 }

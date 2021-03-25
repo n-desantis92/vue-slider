@@ -26,7 +26,7 @@
   object-fit: cover;
   object-position: center;
   max-height: 100%;
-  min-width: 100%;
+  min-width: 80%;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -49,4 +49,8 @@
 .conteiner-bullet i {
   margin: 10px;
   color: #fff;
+}
+
+.active {
+  color: blue;
 }

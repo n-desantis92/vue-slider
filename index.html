@@ -19,8 +19,8 @@
       <div class="carousel-next">
         <i @click="nextImg" class="fas fa-chevron-right"></i>
       </div>
-      <div class="conteiner-bullet">
-        <i  class="fas fa-circle"></i>
+      <div class="conteiner-bullets">
+        <i  class="fas fa-circle" v-for="i in img"></i>
       </div>
     </div>
   </div>

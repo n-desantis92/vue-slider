@@ -12,11 +12,15 @@
 <body>
   <div id="app" class="container">
     <div class="conteiner-slider">
-      <i class="fas fa-chevron-left"></i>
-      <img :src=".img[0].url" alt="re-leone">
-      <i class="fas fa-chevron-right"></i>
+      <div class="carousel-prev">
+        <i @click="prevImg" class="fas fa-chevron-left"></i>
+      </div>
+      <img :src="img[imgIndex].url" alt="img[imgIndex].alt">
+      <div class="carousel-next">
+        <i @click="nextImg" class="fas fa-chevron-right"></i>
+      </div>
       <div class="conteiner-bullet">
-        <i class="fas fa-circle"></i>
+        <i  class="fas fa-circle"></i>
       </div>
     </div>
   </div>

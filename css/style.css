@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-.conteiner-bullet {
+.conteiner-bullets {
   background-color: #654321;
   min-width: 100px;
   position: absolute;
@@ -46,11 +46,11 @@
   box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.conteiner-bullet i {
+.conteiner-bullets i {
   margin: 10px;
   color: #fff;
 }
 
-.active {
+.conteiner-bullets i.active {
   color: blue;
 }

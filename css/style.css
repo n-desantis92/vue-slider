@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url(../img/legno-sfondo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.conteiner-slider {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.conteiner-slider img {
+  object-fit: cover;
+  object-position: center;
+  max-height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.conteiner-slider i {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.conteiner-bullet {
+  background-color: #654321;
+  min-width: 100px;
+  position: absolute;
+  bottom: -70px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.conteiner-bullet i {
+  margin: 10px;
+  color: #fff;
+}

@@ -21,6 +21,23 @@ var app = new Vue({
         }
       ],
       imgIndex: 0,
+      autoplay: null,
+    },
+
+    mounted: function () {
+      this.autoplay = setInterval(this.nextImg,2000);
+
+      const ancora = this;
+
+      this.handler = function (e) {
+        if (e.which === 37) {
+          ancora.clickPrevImg();
+        }else if (e.which === 39) {
+          ancora.clickNextImg();
+        }
+      }
+      window.addEventListener("keydown",this.handler )
+
     },
     methods: {
       nextImg: function () {
@@ -37,7 +54,15 @@ var app = new Vue({
       },
       // bulletImg:function (i) {
       //   this.imgIndex = i;
-      // }
+      // },
+      clickNextImg: function () {
+        this.nextImg();
+        clearInterval(this.autoplay);
+      },
+      clickPrevImg: function () {
+        this.prevImg();
+        clearInterval(this.autoplay);
+      }
     }
 
 

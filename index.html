@@ -13,11 +13,11 @@
   <div id="app" class="container">
     <div class="conteiner-slider">
       <div class="carousel-prev">
-        <i @click="prevImg" class="fas fa-chevron-left"></i>
+        <i @click="clickPrevImg" class="fas fa-chevron-left"></i>
       </div>
-      <img :src="img[imgIndex].url" alt="img[imgIndex].alt">
+      <img :src="img[imgIndex].url" :alt="img[imgIndex].alt">
       <div class="carousel-next">
-        <i @click="nextImg" class="fas fa-chevron-right"></i>
+        <i @click="clickNextImg" class="fas fa-chevron-right"></i>
       </div>
       <div class="conteiner-bullets">
         <i class="fas fa-circle" v-for="(item,index) in img" :class="imgIndex == index ? 'active' : '' " @click="imgIndex = index"></i>
